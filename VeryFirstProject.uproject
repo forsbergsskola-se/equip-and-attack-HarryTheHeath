@@ -27,6 +27,10 @@
 		{
 			"Name": "ModularGameplay",
 			"Enabled": true
+		},
+		{
+			"Name": "MGF_Vehicle",
+			"Enabled": true
 		}
 	]
 }
