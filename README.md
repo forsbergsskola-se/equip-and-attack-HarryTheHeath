@@ -30,5 +30,5 @@ Features I've implemented:
 
 [<img src="https://i.ytimg.com/vi/t7TUS1UpD0s/maxresdefault.jpg" width="100%">](https://youtu.be/t7TUS1UpD0s)
 
-*note - Jump can't be used when attacking or emoting anymore. 
+*update - Jump can't be used when attacking or emoting anymore. 
 Jump attacks can still be triggered, but are also spam-protected*
