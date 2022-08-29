@@ -29,7 +29,11 @@
 			"Enabled": true
 		},
 		{
-			"Name": "MGF_Vehicle",
+			"Name": "Inventory_System",
+			"Enabled": true
+		},
+		{
+			"Name": "MGF_Axe",
 			"Enabled": true
 		}
 	]
