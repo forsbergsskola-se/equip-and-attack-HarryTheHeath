@@ -11,16 +11,19 @@ class VERYFIRSTPROJECT_API ATestActor : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+public:
+
+	UFUNCTION(BlueprintCallable)
+	void DrawSphere(FVector Location, FColor Color);
+	
 	// Sets default values for this actor's properties
 	ATestActor();
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+	
 };
