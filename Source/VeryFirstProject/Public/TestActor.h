@@ -13,7 +13,7 @@ class VERYFIRSTPROJECT_API ATestActor : public AActor
 	
 public:
 
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="AI 🤖")
 	void DrawSphere(FVector Location, FColor Color);
 	
 	// Sets default values for this actor's properties
