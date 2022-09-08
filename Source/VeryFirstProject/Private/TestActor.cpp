@@ -3,10 +3,12 @@
 
 #include "TestActor.h"
 
-void ATestActor::DrawSphere(FVector Location, FColor Color)
+void ATestActor::DrawSphereAtTargetDestination(FLinearColor Color, float Time)
 {
-	DrawDebugSphere(GetWorld(), Location, 100, 12, Color, true);
-}
+	FVector PathDestination = GetPathFollowingComponent()->GetPathDestination();
+	FNavPathSharedPtr Path = GetPathFollowingComponent()->GetPath();
+	DrawDebugSphere(GetWorld(), PathDestination, 100, 12, Color.ToFColorSRGB(), false, Time);
+} 
 
 // Sets default values
 ATestActor::ATestActor()

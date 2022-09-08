@@ -3,22 +3,22 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "AIController.h"
 #include "TestActor.generated.h"
 
 UCLASS()
-class VERYFIRSTPROJECT_API ATestActor : public AActor
+class VERYFIRSTPROJECT_API ATestActor : public AAIController
 {
 	GENERATED_BODY()
 	
 public:
 
 	UFUNCTION(BlueprintCallable, Category="AI 🤖")
-	void DrawSphere(FVector Location, FColor Color);
+	void DrawSphereAtTargetDestination(FLinearColor Color, float Time);
 	
 	// Sets default values for this actor's properties
 	ATestActor();
-
+	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
