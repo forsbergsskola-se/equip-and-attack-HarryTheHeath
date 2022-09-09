@@ -15,6 +15,19 @@ public:
 	// Sets default values for this component's properties
 	UGP_PathFollowingComponent();
 
+
+	/**
+	If true generate debug spheres for each path point
+	*/
+	UPROPERTY(EditDefaultsOnly, Category= "Debug 🐞")
+	bool DrawDebugPathPoints;
+
+	/**
+	Set the colour of generated debug path points
+	*/
+	UPROPERTY(EditDefaultsOnly, Category= "Debug 🐞")
+	FLinearColor DebugColour;
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -25,6 +38,10 @@ public:
 	                           FActorComponentTickFunction* ThisTickFunction) override;
 	                           
 
+	/**
+	 * @param Color Colour of sphere
+	 * @param Time Time taken until spheres are displayed
+	 */
 	UFUNCTION(BlueprintCallable)
 	void DrawPathPoints(FLinearColor Color, float Time);
 };

@@ -31,7 +31,8 @@ void UGP_PathFollowingComponent::TickComponent(float DeltaTime, ELevelTick TickT
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	if (DrawDebugPathPoints)
+		DrawPathPoints(DebugColour, .1);
 }
 
 void UGP_PathFollowingComponent::DrawPathPoints(FLinearColor Color, float Time)
