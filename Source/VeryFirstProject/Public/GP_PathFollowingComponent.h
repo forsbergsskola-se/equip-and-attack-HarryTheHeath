@@ -39,9 +39,9 @@ public:
 	                           
 
 	/**
-	 * @param Color Colour of sphere
-	 * @param Time Time taken until spheres are displayed
-	 */
+	* @param Color Colour of sphere
+	* @param Time Time taken until spheres are displayed
+	*/
 	UFUNCTION(BlueprintCallable)
 	void DrawPathPoints(FLinearColor Color, float Time);
 };
