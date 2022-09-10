@@ -44,4 +44,7 @@ public:
 	*/
 	UFUNCTION(BlueprintCallable)
 	void DrawPathPoints(FLinearColor Color, float Time);
+
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "AI 🤖")
+	bool IsDestinationReachable(FVector Destination);
 };
